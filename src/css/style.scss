@@ -1,0 +1,54 @@
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/footer";
+
+@include fontFace('icomoon','../fonts/icomoon', 400);
+
+body {
+  background-color: #ebd1ab;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 96px;
+  height: 264px;
+  top: 50%;
+  margin-top: -132px;
+  z-index: 2;
+  color: #000;
+  font-size: 0;
+
+  transition: all .3s ease;
+
+  &:before {
+    font-size: 60px;
+  }
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev {
+  left: 0;
+}
+
+.slick-disabled {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+img {
+  width: 100%;
+}
