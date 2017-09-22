@@ -52,3 +52,58 @@ button {
 img {
   width: 100%;
 }
+
+.slide {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  width: 290px;
+  height: 200px;
+  background-color: #5100d3;
+  opacity: .3;
+}
+
+.towers-list {
+
+}
+
+.towers-pics {
+
+}
+.go-to-slide {
+  position: absolute;
+
+  background-color: #5100d3;
+  opacity: .3;
+
+  &--list {
+    width: 280px;
+    height: 35px;
+
+    &--1 {
+      top: 242px;
+      left: 80px;
+    }
+    &--9 {
+      top: 532px;
+      left: 80px;
+    }
+  }
+  &--tower {
+    width: 100px;
+    height: 70px;
+
+    &--1 {
+      top: 509px;
+      right: 1075px;
+    }
+    &--9 {
+      top: 532px;
+      left: 80px;
+    }
+  }
+}

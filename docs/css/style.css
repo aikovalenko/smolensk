@@ -60,9 +60,9 @@ body
 
 button
 {
+    border: none; 
     outline: none;
     background: none;
-    border: none;
 }
 
 .slick-arrow
@@ -110,4 +110,60 @@ button
 img
 {
     width: 100%;
+}
+
+.slide
+{
+    position: relative;
+}
+
+.logo
+{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+
+    width: 290px;
+    height: 200px;
+
+    opacity: .3; 
+    background-color: #5100d3;
+}
+
+.go-to-slide
+{
+    position: absolute;
+
+    opacity: .3; 
+    background-color: #5100d3;
+}
+.go-to-slide--list
+{
+    width: 280px;
+    height: 35px;
+}
+.go-to-slide--list--1
+{
+    top: 242px;
+    left: 80px;
+}
+.go-to-slide--list--9
+{
+    top: 532px;
+    left: 80px;
+}
+.go-to-slide--tower
+{
+    width: 100px;
+    height: 70px;
+}
+.go-to-slide--tower--1
+{
+    top: 509px;
+    right: 1075px;
+}
+.go-to-slide--tower--9
+{
+    top: 532px;
+    left: 80px;
 }
