@@ -10,9 +10,12 @@
 @import "partials/footer";
 
 @include fontFace('icomoon','../fonts/icomoon', 400);
+@include fontFace('Officina','../fonts/OfficinaSansMediumC', 400);
 
 body {
   background-color: #ebd1ab;
+  font-family: 'Officina', 'Helvetica', Arial, serif;
+  font-weight: 400;
 }
 
 button {
@@ -23,7 +26,7 @@ button {
 
 .slick-arrow {
   position: absolute;
-  width: 96px;
+  width: 77px;
   height: 264px;
   top: 50%;
   margin-top: -132px;
@@ -67,13 +70,28 @@ img {
   opacity: .3;
 }
 
-.towers-list {
+.hint {
+  position: absolute;
+  top: 193px;
+  left: 688px;
+  font-size: 30px;
+  width: 260px;
+  opacity: 0;
 
+
+  &.active {
+    opacity: 1;
+    animation: shake 1.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
 }
 
-.towers-pics {
-
+img {
+  font-size: 50px;
 }
+
 .go-to-slide {
   position: absolute;
 
@@ -92,18 +110,106 @@ img {
       top: 532px;
       left: 80px;
     }
+    &--11 {
+      top: 604px;
+      left: 80px;
+    }
+    &--14 {
+      top: 711px;
+      left: 80px;
+    }
+    &--15 {
+      top: 747px;
+      left: 80px;
+    }
+    &--25 {
+      top: 422px;
+      left: 390px;
+    }
+    &--32 {
+      top: 674px;
+      left: 390px;
+    }
+    &--33 {
+      top: 710px;
+      left: 390px;
+    }
+    &--34 {
+      top: 746px;
+      left: 390px;
+    }
+    &--36 {
+      top: 818px;
+      left: 390px;
+    }
   }
   &--tower {
     width: 100px;
-    height: 70px;
+    height: 100px;
 
     &--1 {
+      width: 100px;
+      height: 70px;
+
       top: 509px;
       right: 1075px;
     }
     &--9 {
-      top: 532px;
-      left: 80px;
+      top: 800px;
+      left: 1620px;
     }
+    &--11 {
+      top: 728px;
+      left: 720px;
+    }
+    &--14 {
+      top: 858px;
+      left: 1268px;
+    }
+    &--15 {
+      top: 252px;
+      left: 1590px;
+    }
+    &--25 {
+      top: 663px;
+      left: 1645px;
+    }
+    &--32 {
+      top: 141px;
+      left: 1274px;
+    }
+    &--33 {
+      top: 220px;
+      left: 1000px;
+    }
+    &--34 {
+      width: 100px;
+      height: 70px;
+
+      top: 578px;
+      left: 752px;
+    }
+    &--36 {
+      top: 820px;
+      left: 1436px;
+    }
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: scale(.96);
+  }
+
+  20%, 80% {
+    transform: scale(1.04);
+  }
+
+  30%, 50%, 70% {
+    transform: scale(.96);
+  }
+
+  40%, 60% {
+    transform: scale(1.04);
   }
 }
