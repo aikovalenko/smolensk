@@ -18,6 +18,10 @@ body {
   font-weight: 400;
 }
 
+* {
+  outline: none;
+}
+
 button {
   outline: none;
   background: none;
@@ -66,8 +70,6 @@ img {
   right: 60px;
   width: 290px;
   height: 200px;
-  background-color: #5100d3;
-  opacity: .3;
 }
 
 .hint {
@@ -95,8 +97,6 @@ img {
 .go-to-slide {
   position: absolute;
 
-  background-color: #5100d3;
-  opacity: .3;
 
   &--list {
     width: 280px;
